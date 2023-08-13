@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 import {services} from "@wix/bookings";
 import Link from "next/link";
 import {createClient, OAuthStrategy} from "@wix/api-client";
+import Card from "@/components/Card";
 
 const myWixClient = createClient({
     modules: { services },
@@ -12,7 +13,7 @@ const myWixClient = createClient({
     })
 })
 
-const Search = () => {
+const Search = ({service}) => {
     const [serviceList, setServiceList] = useState([]);
 
     const fetchServices = async () => {
@@ -27,8 +28,19 @@ const Search = () => {
     console.log(serviceList)
 
     return (
-        <div>
-            <h1>Search</h1>
+        <div className="search-container">
+            <div className="search-results__container">
+                <h2>Choose Class:</h2>
+                <ul>
+                    {serviceList.map((service) => (
+                        <li key={service._id}>
+                            <Link className="card-link" href="/">
+                                <Card service={service}/>
+                            </Link>
+                        </li>))
+                    }
+                </ul>
+            </div>
         </div>
     )
 }
