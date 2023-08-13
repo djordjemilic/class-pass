@@ -41,8 +41,52 @@ button.main-button__secondary {
     color: rgb(2, 86, 254);
     border: 1px solid rgb(2, 86, 254);
     padding: 10px 20px;
+    background: rgb(255,255,255);
     border-radius: 0.25rem;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+/*main page*/
+
+.main {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(//images.ctfassets.net/ew96z4wsnz93/4JnGWE3DEM5VRx1fVvNfsD/ca34fa98ac4a14048e4c5badd667584e/FallbackHomepage_Hero_Desktop__1_.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-info__container {
+    background-color: rgb(255,255,255);
+    border-radius: 30px;
+    padding: 60px;
+    width: 450px;
+    text-align: center;
+}
+
+.main-info__container h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-info__container .main-disclaimer {
+    font-size: 12px;
+    color: rgb(126,126,126);
+}
+
+.main-info__container .main-button__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.main-info__container .main-button__container button {
+    margin-bottom: 5px;
 }
