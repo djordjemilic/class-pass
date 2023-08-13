@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@wix/api-client": "^1.2.8",
+    "@wix/bookings": "^1.0.223",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
+    "js-cookie": "^3.0.5",
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0"

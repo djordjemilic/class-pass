@@ -6,7 +6,7 @@ const App = ({Component, pageProps}) => {
   return (
     <>
         <header>
-            <Link href="">
+            <Link href="/">
                 <h3>ClassPass</h3>
             </Link>
         </header>
