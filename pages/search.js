@@ -34,7 +34,7 @@ const Search = ({service}) => {
                 <ul>
                     {serviceList.map((service) => (
                         <li key={service._id}>
-                            <Link className="card-link" href="/">
+                            <Link className="card-link" href={`/services/${encodeURIComponent(service.mainSlug.name)}`}>
                                 <Card service={service}/>
                             </Link>
                         </li>))
